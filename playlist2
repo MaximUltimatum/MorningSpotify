@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Set volume to 75% and unmute it
+amixer sset Master unmute
+amixer sset Headphone unmute #you need headphone and speaker because master unmute doesnt work for some reason
+amixer sset Speaker+LO unmute
+amixer -D pulse sset Master 75%
+
+#opens spotify to a playlist uri
+spotify --uri='spotify:user:mcder3446:playlist:2e7j7WIALE6v7hstfOOdcm'&
+
+sleep 4
+
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Play
+
+sleep 1
+
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
