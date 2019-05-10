@@ -2,7 +2,7 @@
 A Fully function cron spotify alarm clock that can play one track in the morning. To play a playlist that is randomized, you need to downgrade to spotify 0.9 because they didn't keep up support for mpris in the new version
 
 
-#THIS INFORMATION IS ALSO IN cront
+#THIS INFORMATION IS ALSO IN thecroncommand
 
 #To enter this command into crontab, do the following:
 
