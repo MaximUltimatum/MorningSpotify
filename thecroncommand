@@ -1,5 +1,4 @@
 #To enter this command into crontab, do the following:
-
 crontab -e
 
 #Go to the bottom of the file, and enter:
